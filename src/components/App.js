@@ -1,27 +1,16 @@
-import { Routes, Route } from "react-router-dom";
-
-import Home from "./Home";
-import About from "./About";
-import Categories from "./Categories";
-import Category from "./Category";
-import Header from "./Header";
+import logo from "../assets/red30-tech-logo.png";
 
 function App() {
   return (
     <div className="app">
-      <Header />
-
-      <Routes>
-        <Route path="/" element={<Home title="Welcome to Red30 Tech" />} />
-        <Route path="about" element={<About />} />
-        <Route path="categories" element={<Categories />}>
-          <Route path=":catId" element={<Category />} />
-        </Route>
-        <Route
-          path="*"
-          element={<h1 className="not-found">Page Not Found</h1>}
+      <header className="container">
+        <img
+          className="logo"
+          src={logo}
+          alt="Red30 Tech logo"
+          title="Red30 Tech | Home"
         />
-      </Routes>
+      </header>
 
       <footer className="container">
         &copy;2022 | <a href="https://red30tech.com/">Red30 Tech</a>
