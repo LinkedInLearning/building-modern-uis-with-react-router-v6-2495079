@@ -17,10 +17,6 @@ function App() {
         <Route path="categories" element={<Categories />}>
           <Route path="category" element={<Category />} />
         </Route>
-        <Route
-          path="*"
-          element={<h1 className="not-found">Page Not Found</h1>}
-        />
       </Routes>
 
       <footer className="container">
