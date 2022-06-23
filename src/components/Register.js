@@ -1,5 +1,5 @@
-import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Register() {
   const navigate = useNavigate();
@@ -7,7 +7,7 @@ export default function Register() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    navigate("/confirmed");
+    navigate("/confirmed", { state: { email: emailRef.current.value } });
   }
 
   return (
