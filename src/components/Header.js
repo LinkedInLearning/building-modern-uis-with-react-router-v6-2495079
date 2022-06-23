@@ -25,6 +25,9 @@ export default function Header() {
         <NavLink to="/categories" className={getClass}>
           Categories
         </NavLink>
+        <NavLink to="/register" className={getClass}>
+          Register
+        </NavLink>
       </nav>
     </header>
   );
