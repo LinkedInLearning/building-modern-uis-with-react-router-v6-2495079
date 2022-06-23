@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, Link } from "react-router-dom";
 import { getCategories } from "../api";
 
 export default function Categories() {
@@ -9,7 +9,9 @@ export default function Categories() {
 
       <ul className="categories">
         {categories.map(cat => (
-          <li key={cat.id}>{cat.name}</li>
+          <li key={cat.id}>
+            <Link to={cat.id}>{cat.name}</Link>
+          </li>
         ))}
       </ul>
       <Outlet />
