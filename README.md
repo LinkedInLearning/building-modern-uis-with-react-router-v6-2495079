@@ -1,70 +1,44 @@
-# Getting Started with Create React App
+# Building Modern UIs with React Router v6
+This is the repository for the LinkedIn Learning course Building Modern UIs with React Router v6. The full course is available from [LinkedIn Learning][lil-course-url].
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Building Modern UIs with React Router v6][lil-thumbnail-url] 
 
-## Available Scripts
+Are you already familiar with React and ready to level up your skills and build modern user interfaces? In this course, learn how to extend your React applications by adding routing capabilities with React Router, the standard routing library for React. Instructor Guil Hernandez starts by going over routing basics and single page apps. He then illustrates some of the useful React Router components, hooks, and other features that navigate users to all the different views and help create dynamic user interfaces that automatically update whenever the URL changes. He explains how to create 404 or “not found” routes, as well as how the location state, history object, and the history stack work. Guil also provides several challenges along the way so you can practice as you go and make what you’re learning stick.
 
-In the project directory, you can run:
+## Instructions
+This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
 
-### `npm start`
+## Branches
+The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
+Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    error: Your local changes to the following files would be overwritten by checkout:        [files]
+    Please commit your changes or stash them before you switch branches.
+    Aborting
 
-### `npm test`
+To resolve this issue:
+	
+    Add changes to git using this command: git add .
+	Commit changes using this command: git commit -m "some message"
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installing
+1. To use these exercise files, you must have the following installed:
+	- [Node.js](https://nodejs.org/en/)
+2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
+3. Run `npm install` to install all project dependencies, then `npm start` to run and launch the app
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Instructor
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Guil Hernandez 
+                            
+Software Development Instructor and Developer
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+                            
 
-### `npm run eject`
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/guil-hernandez).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[lil-course-url]: https://www.linkedin.com/learning/building-modern-uis-with-react-router-v6
+[lil-thumbnail-url]: https://cdn.lynda.com/course/2495079/2495079-1660328056345-16x9.jpg
